@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -19,8 +19,8 @@
       <nav class="navbar" aria-label="Primary navigation">
         <a class="brand" href="#home" aria-label="Cathy Fang home"><span>Cathy Fang</span><i aria-hidden="true"></i></a>
         <div class="nav-links" id="nav-links">
-          <a href="#projects" data-en="Portfolio" data-zh="项目作品">Portfolio</a>
           <a href="#experience" data-en="Work Experience" data-zh="工作经历">Work Experience</a>
+          <a href="#projects" data-en="Portfolio" data-zh="项目作品">Portfolio</a>
           <a href="#timeline" data-en="Timeline" data-zh="成长轨迹">Timeline</a>
           <a href="#skills" data-en="Tech Stack" data-zh="技术栈">Tech Stack</a>
           <a href="#contact" data-en="Contact" data-zh="联系我">Contact</a>
@@ -47,6 +47,28 @@
           <p data-en="Focused on LLM agents, online post-training, scientific reasoning, and reliable tool use." data-zh="关注大模型 Agent、在线后训练、科学推理与可靠工具调用。">Focused on LLM agents, online post-training, scientific reasoning, and reliable tool use.</p>
           <p class="hero-email"><span data-en="Email:" data-zh="邮箱：">Email:</span> <a href="mailto:e1553200@u.nus.edu">e1553200@u.nus.edu</a></p>
           <p class="hero-email"><span>GitHub:</span> <a href="https://github.com/CathySamaNUS" target="_blank" rel="noreferrer">github.com/CathySamaNUS</a></p>
+        </div>
+      </section>
+
+      <section class="experience content-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal"><p data-en="WORK EXPERIENCE" data-zh="工作经历">WORK EXPERIENCE</p><h2 id="experience-title" data-en="Building AI in the real world" data-zh="在真实场景中构建 AI 系统">Building AI in the real world</h2></div>
+        <div class="experience-list">
+          <article class="experience-item reveal">
+            <div class="experience-logo"><img src="assets/micron-logo.svg" alt="" width="288" height="62" /></div>
+            <div class="experience-copy"><div class="experience-meta"><h3 data-en="Micron Technology · ML/AI Engineer Intern" data-zh="美光科技 · ML/AI 工程师实习生">Micron Technology · ML/AI Engineer Intern</h3><time data-en="Aug 2026 — Present" data-zh="2026.08 — 至今">Aug 2026 — Present</time></div><p data-en="Agent skill quality evaluation, security and privacy checks, and semantic deduplication across approximately 400 skills." data-zh="面向约 400 个 Agent Skill 构建质量评测、安全隐私检测与语义去重流程。">Agent skill quality evaluation, security and privacy checks, and semantic deduplication across approximately 400 skills.</p></div>
+          </article>
+          <article class="experience-item reveal">
+            <div class="experience-logo"><img src="assets/tencent-logo.svg" alt="" width="3456" height="464" loading="lazy" /></div>
+            <div class="experience-copy"><div class="experience-meta"><h3 data-en="Tencent IEG · Research Intern" data-zh="腾讯 IEG · 研究实习生">Tencent IEG · Research Intern</h3><time data-en="May — Jul 2026" data-zh="2026.05 — 2026.07">May — Jul 2026</time></div><p data-en="Online post-training for chemical reasoning models and multi-turn data-science agents, with 20+ training and ablation studies." data-zh="研究化学推理模型与多轮数据科学 Agent 的在线后训练，完成 20+ 组训练与消融实验。">Online post-training for chemical reasoning models and multi-turn data-science agents, with 20+ training and ablation studies.</p></div>
+          </article>
+          <article class="experience-item reveal">
+            <div class="experience-logo"><img src="assets/microsoft-logo.svg" alt="" width="512" height="109" loading="lazy" /></div>
+            <div class="experience-copy"><div class="experience-meta"><h3 data-en="Microsoft DKI · Research Intern" data-zh="微软 DKI · 研究实习生">Microsoft DKI · Research Intern</h3><time data-en="Dec 2023 — Oct 2024" data-zh="2023.12 — 2024.10">Dec 2023 — Oct 2024</time></div><p data-en="SFT data synthesis, model training, and reliability engineering for globally shipped Excel agent capabilities." data-zh="为面向全球用户的 Excel Agent 开展 SFT 数据合成、模型训练与可靠性工程。">SFT data synthesis, model training, and reliability engineering for globally shipped Excel agent capabilities.</p></div>
+          </article>
+          <article class="experience-item reveal">
+            <div class="experience-logo"><img class="volkswagen-logo" src="assets/volkswagen-logo.svg" alt="" width="56" height="56" loading="lazy" /></div>
+            <div class="experience-copy"><div class="experience-meta"><h3 data-en="Volkswagen · Research Intern" data-zh="大众汽车 · 研究实习生">Volkswagen · Research Intern</h3><time data-en="Jul — Aug 2023" data-zh="2023.07 — 2023.08">Jul — Aug 2023</time></div><p data-en="Calibrated industrial vision data and optimized Cognex VisionPro inspection rules, reaching 92% foreign-object detection and 90% adhesive-continuity detection." data-zh="负责工业视觉数据校准并优化 Cognex VisionPro 检测规则，异物检测率达到 92%，胶体连续性检测率达到 90%。">Calibrated industrial vision data and optimized Cognex VisionPro inspection rules, reaching 92% foreign-object detection and 90% adhesive-continuity detection.</p></div>
+          </article>
         </div>
       </section>
 
@@ -131,16 +153,6 @@
             </div>
           </article>
 
-        </div>
-      </section>
-
-      <section class="experience content-shell" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading reveal"><p data-en="WORK EXPERIENCE" data-zh="工作经历">WORK EXPERIENCE</p><h2 id="experience-title" data-en="Building AI in the real world" data-zh="在真实场景中构建 AI 系统">Building AI in the real world</h2></div>
-        <div class="experience-list">
-          <article class="experience-item reveal"><time data-en="Aug 2026 — Present" data-zh="2026.08 — 至今">Aug 2026 — Present</time><div><h3 data-en="Micron Technology · ML/AI Engineer Intern" data-zh="美光科技 · ML/AI 工程师实习生">Micron Technology · ML/AI Engineer Intern</h3><p data-en="Agent skill quality evaluation, security and privacy checks, and semantic deduplication across approximately 400 skills." data-zh="面向约 400 个 Agent Skill 构建质量评测、安全隐私检测与语义去重流程。">Agent skill quality evaluation, security and privacy checks, and semantic deduplication across approximately 400 skills.</p></div></article>
-          <article class="experience-item reveal"><time data-en="May — Jul 2026" data-zh="2026.05 — 2026.07">May — Jul 2026</time><div><h3 data-en="Tencent IEG · Research Intern" data-zh="腾讯 IEG · 研究实习生">Tencent IEG · Research Intern</h3><p data-en="Online post-training for chemical reasoning models and multi-turn data-science agents, with 20+ training and ablation studies." data-zh="研究化学推理模型与多轮数据科学 Agent 的在线后训练，完成 20+ 组训练与消融实验。">Online post-training for chemical reasoning models and multi-turn data-science agents, with 20+ training and ablation studies.</p></div></article>
-          <article class="experience-item reveal"><time data-en="Dec 2023 — Oct 2024" data-zh="2023.12 — 2024.10">Dec 2023 — Oct 2024</time><div><h3 data-en="Microsoft DKI · Research Intern" data-zh="微软 DKI · 研究实习生">Microsoft DKI · Research Intern</h3><p data-en="SFT data synthesis, model training, and reliability engineering for globally shipped Excel agent capabilities." data-zh="为面向全球用户的 Excel Agent 开展 SFT 数据合成、模型训练与可靠性工程。">SFT data synthesis, model training, and reliability engineering for globally shipped Excel agent capabilities.</p></div></article>
-          <article class="experience-item reveal"><time data-en="Jul — Aug 2023" data-zh="2023.07 — 2023.08">Jul — Aug 2023</time><div><h3 data-en="Volkswagen · Research Intern" data-zh="大众汽车 · 研究实习生">Volkswagen · Research Intern</h3><p data-en="Calibrated industrial vision data and optimized Cognex VisionPro inspection rules, reaching 92% foreign-object detection and 90% adhesive-continuity detection." data-zh="负责工业视觉数据校准并优化 Cognex VisionPro 检测规则，异物检测率达到 92%，胶体连续性检测率达到 90%。">Calibrated industrial vision data and optimized Cognex VisionPro inspection rules, reaching 92% foreign-object detection and 90% adhesive-continuity detection.</p></div></article>
         </div>
       </section>
 
