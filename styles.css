@@ -53,10 +53,30 @@ svg { display: block; }
 .screenshot-cover img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .screenshot-cover .cover-chip { left: auto; right: 18px; }
 
+.experience { padding-bottom: 75px; }
+.education { padding-bottom: 110px; }
+.education-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.education-card { display: flex; flex-direction: column; min-height: 244px; padding: 27px 30px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); box-shadow: var(--shadow); }
+.education-topline { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 18px; margin-bottom: 20px; }
+.education-topline span { color: var(--blue); font-size: 11px; font-weight: 800; letter-spacing: .13em; }
+.education-topline time { color: var(--quiet); font-size: 12px; }
+.education-card h3 { margin: 0; font-size: 21px; line-height: 1.4; letter-spacing: -.025em; }
+.education-major { margin: 6px 0 0; color: var(--muted); font-size: 15px; }
+.education-result { display: flex; align-items: baseline; gap: 12px; margin-top: auto; padding-top: 25px; color: var(--muted); font-size: 13px; }
+.education-result strong { color: var(--text); font-size: 18px; letter-spacing: -.02em; }
+.education-honor { align-self: flex-start; margin: 10px 0 0; padding: 4px 9px; border: 1px solid rgba(90,174,255,.23); border-radius: 6px; background: rgba(90,174,255,.08); color: var(--blue); font-size: 12px; font-weight: 600; }
+
 @media (max-width: 980px) {
   .nav-links { position: fixed; top: 68px; left: 20px; right: 20px; display: grid; gap: 0; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: color-mix(in srgb, var(--bg) 96%, transparent); box-shadow: var(--shadow); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: .2s ease; }.nav-links.open { opacity: 1; visibility: visible; transform: none; }.nav-links a { padding: 11px; }.menu-toggle { display: grid; }.project-grid { grid-template-columns: 1fr; max-width: 650px; margin-inline: auto; }.project-card { min-height: 0; }.project-cover { height: 300px; }.skill-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 680px) {
   .content-shell, .navbar { width: calc(100% - 30px); }.site-header { height: 68px; }.brand { font-size: 17px; }.brand span { display: none; }.brand::before { content: "CF"; display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 9px; color: var(--blue); font-size: 11px; }.pill-button { min-width: 58px; padding: 0 12px; }.circle-button { width: 40px; height: 40px; }.hero { min-height: 780px; padding: 155px 20px 80px; }.hero-halo { top: 85px; width: 500px; }.avatar-wrap { width: 142px; height: 142px; }.hero h1 { margin-top: 37px; font-size: 41px; }.hero-intro { font-size: 15px; }.hero-intro p { margin-bottom: 5px; }.projects { padding-bottom: 70px; }.center-heading { margin-bottom: 36px; }.center-heading h2 { font-size: 31px; }.project-grid { gap: 24px; }.project-cover { height: 245px; }.project-body { padding: 25px 23px; }.project-body h3 { font-size: 19px; }.experience { padding-top: 0; padding-bottom: 80px; }.timeline-section, .skills { padding-top: 80px; }.experience-item { grid-template-columns: 92px minmax(0, 1fr); align-items: start; gap: 15px; padding: 23px 2px; }.experience-logo { width: 92px; height: 68px; padding: 10px 7px; }.experience-logo img.volkswagen-logo { width: 44px; height: 44px; }.experience-meta { display: block; margin-bottom: 9px; }.experience-item h3 { font-size: 16px; }.experience-item time { display: block; margin-top: 4px; white-space: normal; }.experience-item p { font-size: 13px; }.timeline { grid-template-columns: 1fr; gap: 32px; padding: 0 0 0 29px; border-top: 0; border-left: 1px solid var(--line); }.timeline > div::before { top: 5px; left: -34px; }.contact { padding-top: 90px; }.contact-card { padding: 55px 21px; }.footer { flex-direction: column; align-items: center; gap: 9px; }
+}
+@media (max-width: 680px) {
+  .education { padding-bottom: 80px; }
+  .education-grid { grid-template-columns: 1fr; gap: 16px; }
+  .education-card { min-height: 0; padding: 24px 22px; }
+  .education-card h3 { font-size: 18px; }
+  .education-result { padding-top: 24px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }.reveal { opacity: 1; transform: none; } }
