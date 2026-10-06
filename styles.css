@@ -80,4 +80,9 @@ svg { display: block; }
   .education-card h3 { font-size: 18px; }
   .education-result { padding-top: 24px; }
 }
+.experience-logo { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+html:not([data-theme="light"]) .experience-logo .logo-dark-ink { filter: brightness(0) invert(1); }
+html:not([data-theme="light"]) .experience-logo img[src$="tencent-logo.svg"] { filter: brightness(1.7); }
+html:not([data-theme="light"]) .experience-logo img[src$="microsoft-logo.svg"] { filter: brightness(1.8); }
+html:not([data-theme="light"]) .experience-logo .volkswagen-logo { filter: brightness(0) invert(1); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }.reveal { opacity: 1; transform: none; } }
