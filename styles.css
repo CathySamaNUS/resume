@@ -50,6 +50,9 @@ svg { display: block; }
 .contact { padding: 120px 0 90px; }.contact-card { padding: 70px 28px; border: 1px solid var(--line); border-radius: 22px; background: var(--card); text-align: center; box-shadow: var(--shadow); }.contact-card > p { margin: 0 0 12px; color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: .14em; }.contact-card h2 { max-width: 720px; margin: 0 auto 25px; font-size: clamp(28px, 4vw, 43px); line-height: 1.28; letter-spacing: -.04em; }.contact-card a { color: var(--blue); font-weight: 600; }.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; }.contact-links a:hover { color: var(--blue-light); text-decoration: underline; }.footer { display: flex; justify-content: space-between; padding: 28px 0 42px; border-top: 1px solid var(--line); color: var(--quiet); font-size: 12px; }.footer a:hover { color: var(--blue); }
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .65s ease; }.reveal.visible { opacity: 1; transform: none; }
 
+.screenshot-cover img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.screenshot-cover .cover-chip { left: auto; right: 18px; }
+
 @media (max-width: 980px) {
   .nav-links { position: fixed; top: 68px; left: 20px; right: 20px; display: grid; gap: 0; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: color-mix(in srgb, var(--bg) 96%, transparent); box-shadow: var(--shadow); opacity: 0; visibility: hidden; transform: translateY(-8px); transition: .2s ease; }.nav-links.open { opacity: 1; visibility: visible; transform: none; }.nav-links a { padding: 11px; }.menu-toggle { display: grid; }.project-grid { grid-template-columns: 1fr; max-width: 650px; margin-inline: auto; }.project-card { min-height: 0; }.project-cover { height: 300px; }.skill-grid { grid-template-columns: 1fr; }
 }

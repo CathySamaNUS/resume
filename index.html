@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=2" />
+    <link rel="stylesheet" href="styles.css?v=3" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -54,6 +54,45 @@
         <div class="center-heading reveal"><h2 id="projects-title" data-en="My Projects" data-zh="我的项目">My Projects</h2><i aria-hidden="true"></i></div>
         <div class="project-grid">
           <article class="project-card reveal">
+            <div class="project-cover screenshot-cover job-cover" aria-hidden="true">
+              <img src="assets/job-demo.png" alt="" loading="lazy" width="900" height="620" />
+              <div class="cover-chip">LINKEDIN JOB TRACKER</div>
+            </div>
+            <div class="project-body">
+              <h3 data-en="LinkedIn Job Tracker" data-zh="LinkedIn 岗位检测工作台">LinkedIn Job Tracker</h3>
+              <p data-en="A private job-search workspace combining a desktop browser extension, public LinkedIn listing collection, AI condition extraction and ranking, plus saved, viewed, and applied status tracking across regions." data-zh="结合桌面浏览器扩展、LinkedIn 公开岗位采集、AI 条件提取与筛选，以及收藏、已看和已投递状态管理的个人求职工作台。">A private job-search workspace combining a desktop browser extension, public LinkedIn listing collection, AI condition extraction and ranking, plus saved, viewed, and applied status tracking across regions.</p>
+              <div class="tag-list"><span>React</span><span>Cloudflare</span><span>D1</span><span>Chrome Extension</span></div>
+              <div class="project-actions"><a class="detail-link" href="https://cathy-linkedin-job-tracker.cathy-job-desk.workers.dev/" target="_blank" rel="noreferrer"><span data-en="Open Product" data-zh="查看产品">Open Product</span> ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-cover screenshot-cover trip-cover" aria-hidden="true">
+              <img src="assets/trip-demo.png" alt="" loading="lazy" width="870" height="650" />
+              <div class="cover-chip">MEMORY JOURNAL</div>
+            </div>
+            <div class="project-body">
+              <h3 data-en="Trip Memory Journal" data-zh="旅行回忆手账生成器">Trip Memory Journal</h3>
+              <p data-en="A complete travel-memory workflow that organizes photos, people, keepsakes, quotes, and small moments by location, then turns them into a page-by-page journal that can be previewed, exported, and shared." data-zh="以地点为骨架收集照片、人物、纪念物、原话与小事，再自动整理成可逐页翻阅、导出和分享的旅行手账。">A complete travel-memory workflow that organizes photos, people, keepsakes, quotes, and small moments by location, then turns them into a page-by-page journal that can be previewed, exported, and shared.</p>
+              <div class="tag-list"><span>React</span><span>Vite</span><span>Tailwind</span><span>jsPDF</span></div>
+              <div class="project-actions"><a class="detail-link" href="https://trip-project-psi.vercel.app/" target="_blank" rel="noreferrer"><span data-en="Live Demo" data-zh="在线体验">Live Demo</span> ↗</a><a class="detail-link secondary-link" href="https://github.com/CathySamaNUS/Trip_Project" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-cover screenshot-cover translator-cover" aria-hidden="true">
+              <img src="assets/diwei-demo.png" alt="" loading="lazy" width="960" height="680" />
+              <div class="cover-chip">LLM × COMMUNICATION</div>
+            </div>
+            <div class="project-body">
+              <h3 data-en="Dad-Speak Translator & Boundary Game" data-zh="爹味翻译官 · 催婚闯关">Dad-Speak Translator & Boundary Game</h3>
+              <p data-en="An LLM product that analyzes authority-heavy language, surfaces hidden subtext and psychology, rewrites it into respectful communication, and turns family-pressure conversations into a four-level boundary-setting game." data-zh="用 LLM 拆解权威式表达的表层含义、潜台词与心理动机，改写为更尊重人的沟通方式，并将家庭催婚场景设计成四关边界练习游戏。">An LLM product that analyzes authority-heavy language, surfaces hidden subtext and psychology, rewrites it into respectful communication, and turns family-pressure conversations into a four-level boundary-setting game.</p>
+              <div class="tag-list"><span>Next.js</span><span>FastAPI</span><span>LLM</span><span>Game Design</span></div>
+              <div class="project-actions"><a class="detail-link" href="https://diwei-translator.vercel.app/" target="_blank" rel="noreferrer"><span data-en="Live Demo" data-zh="在线体验">Live Demo</span> ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
             <div class="project-cover training-cover" aria-hidden="true">
               <div class="cover-chip">ONLINE RL</div><div class="cover-metric"><small>Accuracy</small><strong>79.1%</strong></div>
               <svg viewBox="0 0 500 260" preserveAspectRatio="none"><defs><linearGradient id="train-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5fb8ff" stop-opacity=".5" /><stop offset="1" stop-color="#5fb8ff" stop-opacity="0" /></linearGradient></defs><path class="grid-lines" d="M0 55h500M0 115h500M0 175h500M95 0v260M195 0v260M295 0v260M395 0v260" /><path class="area" d="M0 230C50 228 60 210 100 213S170 185 208 192 270 146 305 156 350 118 385 125 442 68 500 52V260H0Z" /><path class="line" d="M0 230C50 228 60 210 100 213S170 185 208 192 270 146 305 156 350 118 385 125 442 68 500 52" /></svg>
@@ -92,60 +131,6 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
-            <div class="project-cover translator-cover" aria-hidden="true">
-              <div class="cover-chip">LLM × COMMUNICATION</div>
-              <div class="chat-scene">
-                <div class="chat-message chat-message-left">“我是为你好。”</div>
-                <div class="analysis-arrow">↓</div>
-                <div class="insight-card"><small>SUBTEXT</small><strong>关心 ≠ 替你决定</strong></div>
-                <div class="chat-message chat-message-right">“我担心你，但决定权在你。”</div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3 data-en="Dad-Speak Translator & Boundary Game" data-zh="爹味翻译官 · 催婚闯关">Dad-Speak Translator & Boundary Game</h3>
-              <p data-en="An LLM product that analyzes authority-heavy language, surfaces hidden subtext and psychology, rewrites it into respectful communication, and turns family-pressure conversations into a four-level boundary-setting game." data-zh="用 LLM 拆解权威式表达的表层含义、潜台词与心理动机，改写为更尊重人的沟通方式，并将家庭催婚场景设计成四关边界练习游戏。">An LLM product that analyzes authority-heavy language, surfaces hidden subtext and psychology, rewrites it into respectful communication, and turns family-pressure conversations into a four-level boundary-setting game.</p>
-              <div class="tag-list"><span>Next.js</span><span>FastAPI</span><span>LLM</span><span>Game Design</span></div>
-              <div class="project-actions"><a class="detail-link" href="https://diwei-translator.vercel.app/" target="_blank" rel="noreferrer"><span data-en="Live Demo" data-zh="在线体验">Live Demo</span> ↗</a></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-cover trip-cover" aria-hidden="true">
-              <div class="cover-chip">MEMORY JOURNAL</div>
-              <div class="journal-paper">
-                <div class="tape tape-one"></div><div class="tape tape-two"></div>
-                <div class="polaroid polaroid-one"><div class="photo-mountain"></div><small>雨天 · 台湾</small></div>
-                <div class="polaroid polaroid-two"><div class="photo-rail"></div><small>沿途的小事</small></div>
-                <svg class="route-line" viewBox="0 0 240 120"><path d="M18 92C68 15 132 112 218 28" /><circle cx="18" cy="92" r="5" /><circle cx="218" cy="28" r="5" /></svg>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3 data-en="Trip Memory Journal" data-zh="旅行回忆手账生成器">Trip Memory Journal</h3>
-              <p data-en="A complete travel-memory workflow that organizes photos, people, keepsakes, quotes, and small moments by location, then turns them into a page-by-page journal that can be previewed, exported, and shared." data-zh="以地点为骨架收集照片、人物、纪念物、原话与小事，再自动整理成可逐页翻阅、导出和分享的旅行手账。">A complete travel-memory workflow that organizes photos, people, keepsakes, quotes, and small moments by location, then turns them into a page-by-page journal that can be previewed, exported, and shared.</p>
-              <div class="tag-list"><span>React</span><span>Vite</span><span>Tailwind</span><span>jsPDF</span></div>
-              <div class="project-actions"><a class="detail-link" href="https://trip-project-psi.vercel.app/" target="_blank" rel="noreferrer"><span data-en="Live Demo" data-zh="在线体验">Live Demo</span> ↗</a><a class="detail-link secondary-link" href="https://github.com/CathySamaNUS/Trip_Project" target="_blank" rel="noreferrer">GitHub ↗</a></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-cover job-cover" aria-hidden="true">
-              <div class="cover-chip">AI JOB DESK</div>
-              <div class="job-dashboard">
-                <div class="job-toolbar"><span>Job Radar</span><i></i></div>
-                <div class="job-row"><b>AI Engineer</b><span>Singapore</span><em>92%</em></div>
-                <div class="job-row"><b>ML Engineer</b><span>Hong Kong</span><em>88%</em></div>
-                <div class="job-row muted-row"><b>Research Scientist</b><span>Tokyo</span><em>84%</em></div>
-                <div class="scan-status"><i></i> AI screening active</div>
-              </div>
-            </div>
-            <div class="project-body">
-              <h3 data-en="Personal Job Desk" data-zh="个人求职工作台">Personal Job Desk</h3>
-              <p data-en="A private job-search workspace combining a desktop browser extension, public LinkedIn listing collection, AI condition extraction and ranking, plus saved, viewed, and applied status tracking across regions." data-zh="结合桌面浏览器扩展、LinkedIn 公开岗位采集、AI 条件提取与筛选，以及收藏、已看和已投递状态管理的个人求职工作台。">A private job-search workspace combining a desktop browser extension, public LinkedIn listing collection, AI condition extraction and ranking, plus saved, viewed, and applied status tracking across regions.</p>
-              <div class="tag-list"><span>React</span><span>Cloudflare</span><span>D1</span><span>Chrome Extension</span></div>
-              <div class="project-actions"><a class="detail-link" href="https://cathy-linkedin-job-tracker.cathy-job-desk.workers.dev/" target="_blank" rel="noreferrer"><span data-en="Open Product" data-zh="查看产品">Open Product</span> ↗</a></div>
-            </div>
-          </article>
         </div>
       </section>
 
